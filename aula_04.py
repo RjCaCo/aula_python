@@ -75,3 +75,8 @@ diferenca = conjunto1 - conjunto2
 # print(uniao)
 # print(intersecao)
 # print(diferenca)
+
+# Removendo duplicatas de uma lista
+lista_com_duplicatas = [1, 2, 2, 3, 4, 4, 5]
+conjunto_sem_duplicatas = set(lista_com_duplicatas)
+print(conjunto_sem_duplicatas)
