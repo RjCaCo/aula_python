@@ -4,41 +4,52 @@ lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 lista_frutas = ['maçã', 'banana', 'laranja']
 
 # Função para listar somente números pares:
-
-for numero in lista_numeros:
+""" for numero in lista_numeros:
     resto = numero % 2
     if (resto == 0):
-        print(numero)
-
-
+        print(numero) """
 # Acesso por Índices:
 
 primeiro_elemento = lista_numeros[0]  # Resultado: 1
-ultimo_elemento = lista_numeros[-1]  # Resultado: 5
+ultimo_elemento = lista_numeros[-2]  # Resultado: 5[]
 
-segunda_fruta = lista_frutas[1]
-# print(segunda_fruta)  # Saída: banana
+# print(primeiro_elemento)
+# print(ultimo_elemento)
+
+primeira_fruta = lista_frutas[0]
+ultima_fruta = lista_frutas[-2]
+
+# print(primeira_fruta)
+# print(ultima_fruta)
 
 
 # Adicionando um elemento
 
-lista_frutas[0] = 'pêra'
-# print(lista_frutas)  # Saída: ['pêra', 'banana', 'laranja']
+# lista_frutas[0] = 'pêra'
+# print(lista_frutas)
 
-lista_frutas.append('uva')
-# print(lista_frutas)  # Saída: ['pêra', 'banana', 'laranja', 'uva']
+# lista_frutas.append('uva')
+# print(lista_frutas)
 
 
 # Removendo um elemento
 
-lista_frutas.remove('banana')
-# print(lista_frutas)  # Saída: ['pêra', 'morango', 'laranja', 'uva']
+# lista_frutas.remove('banana')
+# lista_frutas.insert(2, 'morango')
+# lista_frutas.pop(1)
+# print(lista_frutas)
 
 
-# Fatiamento de lista
+# Fatiamento de lista (slice)
 
-sublista_numeros = lista_numeros[1:4]  # Resultado: [2, 3, 4]
-sublista_frutas = lista_frutas[1:4]  # Resultado: [2, 3, 4]
+lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+lista_frutas = ['maçã', 'banana', 'laranja']
+
+sublista_numeros = lista_numeros[1:5] # [1, 2, 3, 4]
+sublista_frutas = lista_frutas[1:2] # ['banana']
+
+# print(sublista_numeros)
+# print(sublista_frutas)
 
 
 # Tamanho da lista e outras funções com listas
@@ -47,5 +58,20 @@ tamanho_lista = len(lista_numeros)
 lista_numeros.sort()
 lista_numeros.reverse()
 
-# print(tamanho_lista)      # Saída: 10
-# print(lista_numeros)      # Saída: [9, 6, 5, 5, 4, 3, 3, 2, 1, 1]
+
+# Tuplas
+tupla_numeros = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+# tupla_numeros[0] = 100
+# print(tupla_numeros)
+
+# Set
+conjunto1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
+conjunto2 = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+
+uniao = conjunto1 | conjunto2
+intersecao = conjunto1 & conjunto2
+diferenca = conjunto1 - conjunto2
+
+# print(uniao)
+# print(intersecao)
+# print(diferenca)
