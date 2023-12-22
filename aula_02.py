@@ -38,7 +38,7 @@ print ("divisao_inteira", divisao_inteira)
 '<= (menor ou igual a)
 '>= (maior ou igual a) """
 
-x = 5
+x = 20
 y = 10
 
 """ if ((x + y) > 50):
